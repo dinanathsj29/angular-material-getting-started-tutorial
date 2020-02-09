@@ -93,6 +93,7 @@ Topics included/covered
 1. [Introduction to Angular Material](#1-introduction-to-angular-material)
     - 1.1. [What is Material Design](#11-what-is-material-design)
     - 1.2. [What is Angular Material](#12-what-is-angular-material)
+    - 1.3. [Benefits of Angular Material](#13-benefits-of-angular-material)
 
 1 Introduction to Angular Material
 =====================
@@ -121,4 +122,18 @@ Material Design is a `User Interface design language created by Google in 2014`.
 | **`Angular`**                     | Angular Material                          |
 
 > Current major version of Angular and Angular Material is version 7 / 8
+
+1.3. Benefits of Angular Material
+---------------------
+There are several benefits of using Angular Material components. Angular Material Components are:
+- Internationalized (Worldwide user with different languages can use)
+- Clean and simple API
+- Well testing with Unit and Integration test
+- Easily Customizable
+- Theme based (various themes available)
+- Very fast (minimal performance overhead)
+- Well-documented
+- Community support
+- Constructing attractive, consistent, and functional web pages and web applications 
+- Follow/Adhere to modern web design principles like browser portability, device independence, and graceful degradation
 
