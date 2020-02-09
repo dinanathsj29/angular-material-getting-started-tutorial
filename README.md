@@ -53,3 +53,10 @@ In this introductory Angular Material module will have a look and learn:
 - Creating a custom theme
 - Use/Explore Angular Material typography
 - Create custom typography
+
+Topics included/covered
+=====================
+1. [Introduction to Angular Material](#1-introduction-to-angular-material)
+    - 1.1. [What is Material Design](#11-what-is-material-design)
+    
+    
