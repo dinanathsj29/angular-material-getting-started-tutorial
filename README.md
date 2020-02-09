@@ -59,4 +59,10 @@ Topics included/covered
 1. [Introduction to Angular Material](#1-introduction-to-angular-material)
     - 1.1. [What is Material Design](#11-what-is-material-design)
     
-    
+1 Introduction to Angular Material
+=====================
+
+1.1. What is Material Design
+---------------------
+
+Material Design is a `User Interface design language created by Google in 2014`. It dictates a set of principles and guidelines for creating UIs including motion (animations) and interaction (gestures).    
