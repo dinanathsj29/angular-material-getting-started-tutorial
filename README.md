@@ -92,6 +92,7 @@ Topics included/covered
 
 1. [Introduction to Angular Material](#1-introduction-to-angular-material)
     - 1.1. [What is Material Design](#11-what-is-material-design)
+    - 1.2. [What is Angular Material](#12-what-is-angular-material)
 
 1 Introduction to Angular Material
 =====================
@@ -100,3 +101,24 @@ Topics included/covered
 ---------------------
 
 Material Design is a `User Interface design language created by Google in 2014`. It dictates a set of principles and guidelines for creating UIs including motion (animations) and interaction (gestures).
+
+1.2. What is Angular Material
+---------------------
+
+- Angular Material is a UI component library for Angular developers (Material Design components for Angular)
+- Angular Material is the implementation of Material Design for Angular. It offers a set of components and patterns for navigation, forms, buttons, and layouts
+- Angular Material is a library of re-usable and high-quality UI components built with Angular and TypeScript
+- The angular Material library provides us with the component to build awesome user interface/look and feel in quick time
+- It an implementation of Google's Material Design specification and standards (Just like we have UI frameworks for following famous and popular frameworks):
+  - **`ReactJs`** -> MaterialUI
+  - **`VueJs`** -> Vuetify
+  - **`Angular`** -> Angular Material
+
+| **Framework**                     | **UI Component Library**                  |
+| ----------------------------------|-------------------------------------------|
+| **`ReactJs`**                     | MaterialUI                                |
+| **`VueJs`**                       | Vuetify                                   |
+| **`Angular`**                     | Angular Material                          |
+
+> Current major version of Angular and Angular Material is version 7 / 8
+
