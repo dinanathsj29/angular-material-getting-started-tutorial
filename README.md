@@ -160,7 +160,7 @@ In an application, one can use UI library/framework as Angular Material or Boots
 | New in the market(recently develop and introduced)                            | Old UI layout framework                                                                |
 | Consists of fewer components as compared to Bootstrap                          | Consists of many useful components                                              |
 | Angular Material is specially built for Angular, so it is standard framework/UI library used in all Google applications     | Bootstrap is not specially built for Angular so Bootstrap with Angular has lots of third party dependencies which may break any time |
-| Angular Material components are built with Angular/TypeScript/JavaScript| Bootstrap is developed with JavaScript/jQuery. `Bootstrap UI` library is developed with Angular, especially for Angular Development    | 
+| Angular Material components are built with Angular/TypeScript/JavaScript| Bootstrap is built/developed with plain JavaScript and jQuery. `Bootstrap UI` library is developed with Angular, and used especially for Angular Development    | 
+| Common API, Ease to use and standard look and feel for various components| It have a different layout and different standards of look and feel |
 | Good to use but not completely stable, as new component development is in progress | Stable |
-| | |
-
+| |  |
