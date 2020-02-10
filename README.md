@@ -96,6 +96,7 @@ Topics included/covered
     - 1.3. [Benefits of Angular Material](#13-benefits-of-angular-material)
     - 1.4. [Features of Angular Material](#14-features-of-angular-material)
     - 1.5. [Difference Between Angular Material and Bootstrap](#15-difference-between-angular-material-and-bootstrap) | [Angular Material vs Bootstrap](#15-angular-material-vs-bootstrap)
+    - 1.6. [Various Angular Material Comonents](#16-various-angular-material-comonents)
 
 1 Introduction to Angular Material
 =====================
@@ -164,3 +165,45 @@ In an application, one can use UI library/framework as Angular Material or Boots
 | Common API, Ease to use and standard look and feel for various components| It have a different layout and different standards of look and feel |
 | Good to use but not completely stable, as new component development is in progress | Stable |
 | |  |
+
+1.6. Various Angular Material Comonents
+---------------------
+
+> Visit Angular Material library home page: website: https://material.angular.io
+  - Various Angular components available: website: https://material.angular.io/components/categories
+
+1. Install and Add Angular Material to an application
+2. Check Angular Material typography or any other component
+3. **Angular Material comprises a different range of components that implement common interaction patterns according to the Material Design specifications. Here is the list of different Angular Material components and 6 major category:**
+    1. Form Controls
+        - Autocomplete
+        - Check box
+        - Datepcker
+        - Form Field
+        - Input
+        - Radio button  
+        - Select
+        - Slider
+        - Slide toggle
+    2. Navigation
+        - Menu
+        - Sidenav
+        - Toolbar
+    3. Layout
+        - Card
+        - Grid list
+        - List
+        - Tabs
+        - Tree
+    4. Buttons & Indicators
+        - Button
+        - Icon
+        - Progress bar/spinner
+    5. Popups & Modals
+        - Dialog
+        - Tooltip
+    6. Data table
+        - Paginator
+        - Table
+
+- Have a look at some of the examples given for/with each component and try to follow it
