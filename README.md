@@ -94,6 +94,7 @@ Topics included/covered
     - 1.1. [What is Material Design](#11-what-is-material-design)
     - 1.2. [What is Angular Material](#12-what-is-angular-material)
     - 1.3. [Benefits of Angular Material](#13-benefits-of-angular-material)
+    - 1.4. [Features of Angular Material](#14-features-of-angular-material)
 
 1 Introduction to Angular Material
 =====================
@@ -136,4 +137,14 @@ There are several benefits of using Angular Material components. Angular Materia
 - Community support
 - Constructing attractive, consistent, and functional web pages and web applications 
 - Follow/Adhere to modern web design principles like browser portability, device independence, and graceful degradation
+
+1.4. Features of Angular Material 
+---------------------
+
+- In-built responsive designing
+- Cross-browser compatibility 
+- Can be used to create reusable web components
+- Includes new versions of common UI controls/components such as buttons, checkboxes, and text fields, etc. 
+- Adapted to Material Design concepts/principles
+- Includes enhanced/specialized features like cards, toolbar, speed dial, side nav, swipe, and so on
 
