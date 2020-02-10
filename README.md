@@ -95,6 +95,7 @@ Topics included/covered
     - 1.2. [What is Angular Material](#12-what-is-angular-material)
     - 1.3. [Benefits of Angular Material](#13-benefits-of-angular-material)
     - 1.4. [Features of Angular Material](#14-features-of-angular-material)
+    - 1.5. [Difference Between Angular Material and Bootstrap](#15-difference-between-angular-material-and-bootstrap) | [Angular Material vs Bootstrap](#15-angular-material-vs-bootstrap)
 
 1 Introduction to Angular Material
 =====================
@@ -147,4 +148,19 @@ There are several benefits of using Angular Material components. Angular Materia
 - Includes new versions of common UI controls/components such as buttons, checkboxes, and text fields, etc. 
 - Adapted to Material Design concepts/principles
 - Includes enhanced/specialized features like cards, toolbar, speed dial, side nav, swipe, and so on
+
+1.5. Difference Between Angular Material and Bootstrap
+---------------------
+1.5. Angular Material vs Bootstrap
+---------------------
+In an application, one can use UI library/framework as Angular Material or Bootstrap or maybe both together as per needs and requirements
+
+| **Angular Material**              | **Bootstrap**                             |
+| ----------------------------------|-------------------------------------------|
+| New in the market(recently develop and introduced)                            | Old UI layout framework                                                                |
+| Consists of fewer components as compared to Bootstrap                          | Consists of many useful components                                              |
+| Angular Material is specially built for Angular, so it is standard framework/UI library used in all Google applications     | Bootstrap is not specially built for Angular so Bootstrap with Angular has lots of third party dependencies which may break any time |
+| Angular Material components are built with Angular/TypeScript/JavaScript| Bootstrap is developed with JavaScript/jQuery. `Bootstrap UI` library is developed with Angular, especially for Angular Development    | 
+| Good to use but not completely stable, as new component development is in progress | Stable |
+| | |
 
