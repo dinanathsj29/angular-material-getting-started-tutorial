@@ -102,6 +102,7 @@ Topics included/covered
     - 2.1. [Installing Angular Material](#21-installing-angular-material) | [Angular Material Environment Setup](#21-angular-material-environment-setup)
         - 2.1.1. [Installation-The manual or the long way](#211-installation-the-manual-or-the-long-way)
         - 2.1.2. [Installation-The short or quick way](#212-installation-the-short-or-quick-way)
+    - 2.2. [Using Angular Material in project Application](#22-using-angular-material-in-project-application)
 
 1 Introduction to Angular Material
 =====================
@@ -380,3 +381,40 @@ ng --version
 4. Once this simple basic environment setup is done for Angular Material we are ready to use Angular Material in our project/application
 
 > Note: `ng add @angular/material` command include required modules/dependencies, themes and make entries/changes in files like `angular.json, package.json, index.html, main.ts, styles.css, app.module.ts` etc.
+
+2.2. Using Angular Material in project Application
+---------------------
+
+To use Angular Material in project Application, there are 3 simples steps:
+
+1. `Import` required Angular Material component
+2. Add the imported Angular Material component under `imports` array
+3. Add necessary `HTML tag/markup` related to Angular Material component in HTML markup file/page
+
+<hr/>
+
+Let's do it practically:
+
+1. `app.module.ts`: import required Angular Material component module in app.module.ts
+    ```ts
+    import { MatButtonModule } from '@angular/material'
+    ```
+2. Add the imported Angular Material component under `imports` array
+    ```ts
+    imports: [ MatButtonModule ]
+    ```
+3. `app.component.html`: Add necessary html tag/markup related to Angular Material component in html markup file/page
+    ```html
+    <button mat-button>Check Me! </button>
+
+    <button mat-raised-button>Click Me! </button>
+    ```
+4. Run/Serve the angular application with command: 
+    ```
+    ng serve -o
+    ```
+5. Load application in browser, type url and check output
+    ```
+    http://localhost:4200
+    ```
+
