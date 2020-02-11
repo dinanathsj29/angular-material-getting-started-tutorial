@@ -100,6 +100,7 @@ Topics included/covered
 
 2. [Getting Started with Angular Material](#2-getting-started-with-angular-material)
     - 2.1. [Installing Angular Material](#21-installing-angular-material) | [Angular Material Environment Setup](#21-angular-material-environment-setup)
+        - 2.1.1. [Installation-The manual or the long way](#211-installation-the-manual-or-the-long-way)
 
 
 1 Introduction to Angular Material
@@ -254,3 +255,103 @@ ng --version
   2. `The short or quick way`: By using the `ng add` command to easily/quickly add Angular Material in one step using Angular Schematics. This method only works with Angular 6+ versions
 
 > Its good to have and use Angular CLI version 7 and above installed on your machine (so if Angular CLI version 6 or lower available, please upgrade to Angular CLI version 7)
+
+2.1.1. Installation-The manual or the long way
+---------------------
+
+- **`Step 1`**: Install all `dependencies`
+- **`Step 2`**: Include an angular material `theme` in current application `styles.css`
+- **`Step 3`**: Provide `animation support` if any, by importing `BrowserAnimationsModule` or `NoopAnimationsModule` in `app.module.ts`
+- **`Step 4`**: Verify installation of Angular Material, by `using some Material components` in HTML page of an application
+- **`Step 5`**: `Run/Serve the application` to get the final output
+
+<hr/>
+
+> **`Step 1`**: Install all dependencies
+
+1. Create a new project with `angular cli` command-line utility
+    ```
+      ng new demo-material
+    ```
+2. Change directory to explore inside
+    ```
+    cd demo-material
+    ```
+3. install the `Component Dev Kit (CDK)`
+    ```
+    npm i --save @angular/cdk
+    ```
+
+    - `Component Dev Kit (CDK)` is one of the most important dependencies for angular material
+    - Its library allows to create and build awesome components for web
+4. install Angular Material
+    ```
+    npm i --save @angular/material
+    ```
+5. install Angular Animation
+    ```
+    npm i --save @angular/animations
+    ```
+6. install `HammerJS` which provides gesture recognition capabilities (website: hammerjs.github.io)
+    ```
+    npm i --save hammerjs
+    ```
+
+> Single command to install everything ie. above all dependencies at one go: 
+    ```
+    npm i --save @angular/cdk @angular/material @angular/animations hammerjs
+    ```
+
+<hr/>
+
+> **`Step 2`**: Include/import an angular material theme in current application styles.css
+
+1. styles.css
+    ```css
+    @import "~@angular/material/prebuilt-themes/indigo-pink.css"
+    ```
+
+<hr/>
+
+> **`Step 3`**: Provide animation support if any, by importing BrowserAnimationsModule in app.module.ts
+1. app.module.ts
+    ```ts
+    import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+    import { NoopAnimationsModule } from '@angular/platform-browser/animations'
+
+    imports: [
+      BrowserAnimationsModule,
+      NoopAnimationsModule
+    ] 
+    ```
+
+<hr/>
+
+> **`Step 4`**: Verify installation of Angular Material, by using some components in the application HTML page
+
+1. app.component.html
+    - Delete old markup
+    - add Angular Material checkbox component markup as: 
+    ```html
+    <md-checkbox>I am Interested</md-checkbox>
+    ```
+
+2. app.module.ts
+    ```ts
+    import { MdCheckboxModule } from '@angular/material'
+    imports: [
+      BrowserAnimationsModule,
+      NoopAnimationsModule,
+      MdCheckboxModule
+    ]
+    ```
+
+<hr/>
+
+> **`Step 5`**: Run/Serve the application to get final output and load in the browser:
+1. Start the server or Run/Serve the application command: 
+    ```
+    ng serve
+    ```
+2. Open browser and type application server path running at: `localhost:4200`
+
