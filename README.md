@@ -98,6 +98,10 @@ Topics included/covered
     - 1.5. [Difference Between Angular Material and Bootstrap](#15-difference-between-angular-material-and-bootstrap) | [Angular Material vs Bootstrap](#15-angular-material-vs-bootstrap)
     - 1.6. [Various Angular Material Comonents](#16-various-angular-material-comonents)
 
+2. [Getting Started with Angular Material](#2-getting-started-with-angular-material)
+    - 2.1. [Installing Angular Material](#21-installing-angular-material) | [Angular Material Environment Setup](#21-angular-material-environment-setup)
+
+
 1 Introduction to Angular Material
 =====================
 
@@ -207,3 +211,46 @@ In an application, one can use UI library/framework as Angular Material or Boots
         - Table
 
 - Have a look at some of the examples given for/with each component and try to follow it
+
+2 Getting Started with Angular Material
+=====================
+
+2.1. Installing Angular Material
+---------------------
+2.1. Angular Material Environment Setup
+---------------------
+
+To install Angular and Angular Material, we require the following:
+
+- Nodejs
+- Npm
+- Angular CLI
+- Visual Code Editor, or an IDE for writing your code
+
+<hr/>
+
+> Its advisable to follow and keep open updated Angular Material guide/help document while implementing any component in an application: 
+  - https://material.angular.io/guide
+  - https://material.angular.io/guide/getting-started
+
+<hr/>
+
+> First Check Node/NPM, Angular CLI installed version by using the following command: 
+```
+ng -v 
+
+or 
+
+ng --version
+
+```
+
+<hr/>
+
+> In this tutorial, we'll see how to add Material Design to Angular project/application  in two different ways: ( There are a different set of Material installation processes for Angular/Angular CLI 4+ versions and Angular 6+)
+
+  1. `The manual or long way`: Install and add all dependencies by following a bunch of steps manually. This works for Angular 4+ versions
+
+  2. `The short or quick way`: By using the `ng add` command to easily/quickly add Angular Material in one step using Angular Schematics. This method only works with Angular 6+ versions
+
+> Its good to have and use Angular CLI version 7 and above installed on your machine (so if Angular CLI version 6 or lower available, please upgrade to Angular CLI version 7)
