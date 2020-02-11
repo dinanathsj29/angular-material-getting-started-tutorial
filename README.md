@@ -101,7 +101,7 @@ Topics included/covered
 2. [Getting Started with Angular Material](#2-getting-started-with-angular-material)
     - 2.1. [Installing Angular Material](#21-installing-angular-material) | [Angular Material Environment Setup](#21-angular-material-environment-setup)
         - 2.1.1. [Installation-The manual or the long way](#211-installation-the-manual-or-the-long-way)
-
+        - 2.1.2. [Installation-The short or quick way](#212-installation-the-short-or-quick-way)
 
 1 Introduction to Angular Material
 =====================
@@ -355,3 +355,28 @@ ng --version
     ```
 2. Open browser and type application server path running at: `localhost:4200`
 
+2.1.2. Installation-The short or quick way
+---------------------
+
+1. Create a new angular project/application with the command: 
+    ```
+    ng new material-demo
+    ```
+2. Navigate into the newly created project/application folder with the command: 
+    ```
+    cd material-demo
+    ```
+3. Install or setup Angular Material with the command: 
+    ```
+    ng add @angular/material
+    ```
+
+    - Provide an appropriate option for `theme` - `Indigo-pink`
+
+    - Setup `HammerJs for gesture` recognition - `Yes`
+
+    - Browser animations - `Yes`
+
+4. Once this simple basic environment setup is done for Angular Material we are ready to use Angular Material in our project/application
+
+> Note: `ng add @angular/material` command include required modules/dependencies, themes and make entries/changes in files like `angular.json, package.json, index.html, main.ts, styles.css, app.module.ts` etc.
