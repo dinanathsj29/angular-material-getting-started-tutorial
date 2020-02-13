@@ -320,10 +320,14 @@ ng --version
     ```ts
     import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     import { NoopAnimationsModule } from '@angular/platform-browser/animations'
+    
+    //import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
     imports: [
       BrowserAnimationsModule,
       NoopAnimationsModule
+      
+      //  BrowserAnimationsModule, NoopAnimationsModule
     ] 
     ```
 
@@ -335,16 +339,27 @@ ng --version
     - Delete old markup
     - add Angular Material checkbox component markup as: 
     ```html
-    <md-checkbox>I am Interested</md-checkbox>
+    <!-- old markup
+        <md-checkbox>I am Interested</md-checkbox> 
+    -->
+
+    <mat-checkbox>I am Interested</mat-checkbox>
     ```
 
 2. app.module.ts
     ```ts
-    import { MdCheckboxModule } from '@angular/material'
+    /* old statement
+    import { MdCheckboxModule } from '@angular/material' */
+    
+    import { MatCheckboxModule } from '@angular/material/checkbox';
+    
     imports: [
-      BrowserAnimationsModule,
-      NoopAnimationsModule,
-      MdCheckboxModule
+      BrowserAnimationsModule, NoopAnimationsModule,
+      
+      /* old statement
+      MdCheckboxModule */
+
+      MatCheckboxModule
     ]
     ```
 
@@ -398,7 +413,8 @@ Let's do it practically:
 
 1. `app.module.ts`: import required Angular Material component module in app.module.ts
     ```ts
-    import { MatButtonModule } from '@angular/material'
+    /* import { MatButtonModule } from '@angular/material' */
+    import { MatButtonModule } from '@angular/material/button'
     ```
 2. Add the imported Angular Material component under `imports` array
     ```ts
