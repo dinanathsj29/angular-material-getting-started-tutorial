@@ -103,6 +103,7 @@ Topics included/covered
         - 2.1.1. [Installation-The manual or the long way](#211-installation-the-manual-or-the-long-way)
         - 2.1.2. [Installation-The short or quick way](#212-installation-the-short-or-quick-way)
     - 2.2. [Using Angular Material in project Application](#22-using-angular-material-in-project-application)
+     - 2.3. [Creating a separate material module](#23-creating-a-separate-material-module) | [Isolate extract material module](#23-isolate-extract-material-module)
 
 1 Introduction to Angular Material
 =====================
@@ -418,3 +419,30 @@ Let's do it practically:
     http://localhost:4200
     ```
 
+2.3. Creating a separate material module
+---------------------
+2.3. Isolate extract material module
+---------------------
+
+- It is advisable/better recommended and professional approach to create a separate Angular material module named `angMaterials` which will contain/deal with importing and exporting all required Angular material component modules. 
+- Include the `angMaterials` module in `app.module.ts` so that Angular material components code will be isolated as well as it will neat-clean and readable.
+    ```
+    `ng g m angMaterials` 
+
+    or 
+
+    `ng generate module angMaterials`
+    ```
+- `angMaterials.module.ts` file will consist of only the import and exports related to Angular Material modules. So please remove all import and exports statements related to Angular Material modules from `app.module.ts` and add it into newly created `angMaterials.module.ts`:
+    ```ts
+    import { MatButtonModule } from `@angular/material`
+
+    const AngMaterialsCompModule = [
+        MatButtonModule
+    ]
+
+    imports: [ AngMaterialsCompModule ], 
+    exports: [ AngMaterialsCompModule ]
+    ```  
+- Finally include/import and imports the `AngMaterialsModule` in app module
+- Restart the server and run the application than check in browser
