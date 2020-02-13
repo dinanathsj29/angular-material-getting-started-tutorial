@@ -1,11 +1,3 @@
-<p align="center">
- <img src="_images-angular-material/angular-material-logo-1.png" alt="Angular Material Logo" title="Angular Material Logo" width="200" />
-</p>
-
-<p align="center">
- <img src="_images-angular-material/angular-material-logo-2.png" alt="Angular Material Logo" title="Angular Material Logo" width="200" />
-</p>
-
 > **Description**:
 
 Let's Learn what is Angular Material. How to start using Angular Material components to build/design/develop clean and elegant UI. Its practical guide for building Angular 7/8 applications with Angular Material.
@@ -34,6 +26,13 @@ Add topics to categorize your repository and make it more discoverable.
 - angular-material-components
 - angular-material-themes
 
+<p align="center">
+ <img src="_images-angular-material/angular-material-logo-1.png" alt="Angular Material Logo" title="Angular Material Logo" width="200" />
+</p>
+
+<p align="center">
+ <img src="_images-angular-material/angular-material-logo-2.png" alt="Angular Material Logo" title="Angular Material Logo" width="200" />
+</p>
 
 Angular Material getting started tutorial
 =====================
@@ -103,7 +102,7 @@ Topics included/covered
         - 2.1.1. [Installation-The manual or the long way](#211-installation-the-manual-or-the-long-way)
         - 2.1.2. [Installation-The short or quick way](#212-installation-the-short-or-quick-way)
     - 2.2. [Using Angular Material in project Application](#22-using-angular-material-in-project-application)
-     - 2.3. [Creating a separate material module](#23-creating-a-separate-material-module) | [Isolate extract material module](#23-isolate-extract-material-module)
+    - 2.3. [Creating a separate material module](#23-creating-a-separate-material-module) | [Isolate extract material module](#23-isolate-extract-material-module)
 
 1 Introduction to Angular Material
 =====================
@@ -171,7 +170,6 @@ In an application, one can use UI library/framework as Angular Material or Boots
 | Angular Material components are built with Angular/TypeScript/JavaScript| Bootstrap is built/developed with plain JavaScript and jQuery. `Bootstrap UI` library is developed with Angular, and used especially for Angular Development    | 
 | Common API, Ease to use and standard look and feel for various components| It have a different layout and different standards of look and feel |
 | Good to use but not completely stable, as new component development is in progress | Stable |
-| |  |
 
 1.6. Various Angular Material Comonents
 ---------------------
@@ -252,7 +250,7 @@ ng --version
 
 > In this tutorial, we'll see how to add Material Design to Angular project/application  in two different ways: ( There are a different set of Material installation processes for Angular/Angular CLI 4+ versions and Angular 6+)
 
-  1. `The manual or long way`: Install and add all dependencies by following a bunch of steps manually. This works for Angular 4+ versions
+  1. `The manual or the long way`: Install and add all dependencies by following a bunch of steps manually. This works for Angular 4+ versions
 
   2. `The short or quick way`: By using the `ng add` command to easily/quickly add Angular Material in one step using Angular Schematics. This method only works with Angular 6+ versions
 
@@ -310,7 +308,7 @@ ng --version
 
 1. styles.css
     ```css
-    @import "~@angular/material/prebuilt-themes/indigo-pink.css"
+    @import "~@angular/material/prebuilt-themes/indigo-pink.css";
     ```
 
 <hr/>
@@ -318,16 +316,10 @@ ng --version
 > **`Step 3`**: Provide animation support if any, by importing BrowserAnimationsModule in app.module.ts
 1. app.module.ts
     ```ts
-    import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-    import { NoopAnimationsModule } from '@angular/platform-browser/animations'
-    
-    //import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
+    import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
     imports: [
-      BrowserAnimationsModule,
-      NoopAnimationsModule
-      
-      //  BrowserAnimationsModule, NoopAnimationsModule
+      BrowserAnimationsModule, NoopAnimationsModule
     ] 
     ```
 
@@ -386,7 +378,7 @@ ng --version
 3. Install or setup Angular Material with the command: 
     ```
     ng add @angular/material
-    ```
+    ``` 
 
     - Provide an appropriate option for `theme` - `Indigo-pink`
 
@@ -435,6 +427,145 @@ Let's do it practically:
     http://localhost:4200
     ```
 
+<hr/>
+
+> **Syntax & Example**: `package.json`
+
+```json
+{
+  "name": "demo-material",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "~7.2.15",
+    "@angular/cdk": "^7.3.7",
+    "@angular/common": "~7.2.15",
+    "@angular/compiler": "~7.2.15",
+    "@angular/core": "~7.2.15",
+    "@angular/forms": "~7.2.15",
+    "@angular/http": "~7.2.15",
+    "@angular/material": "~7.3.7",
+    "@angular/platform-browser": "~7.2.15",
+    "@angular/platform-browser-dynamic": "~7.2.15",
+    "@angular/router": "~7.2.15",
+    "core-js": "^2.5.4",
+    "hammerjs": "~2.0.8",
+    "rxjs": "~6.5.2",
+    "zone.js": "~0.8.29"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.6.8",
+    "@angular/cli": "~7.3.9",
+    "@angular/compiler-cli": "~7.2.15",
+    "@angular/language-service": "^6.0.3",
+    "@types/jasmine": "~2.8.6",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.2.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~1.7.1",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.0",
+    "karma-jasmine": "~1.1.1",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.3.0",
+    "ts-node": "~5.0.1",
+    "tslint": "~5.9.1",
+    "typescript": "^3.2.4"
+  }
+}
+```
+
+<hr/>
+
+> **Syntax & Example**: `styles.css`
+
+```css
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+body {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+```
+
+<hr/>
+
+> **Syntax & Example**: `app.module.ts`
+
+```ts
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations'
+
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatButtonModule } from '@angular/material/button'
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    NoopAnimationsModule,
+
+    MatCheckboxModule, MatButtonModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+
+export class AppModule { }
+```
+
+<hr/>
+
+> **Syntax & Example**: `app.component.html`
+
+```html
+<div style="text-align:center">
+  
+  <h1>Welcome to {{ title }}!</h1>
+
+  <img width="150" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+
+</div>
+
+<div>
+
+  <h2>Initial Angular Material Markup for testing: </h2>
+
+  <mat-checkbox>I am Interested</mat-checkbox> <br/> <br/>
+
+  Simple Button: <button mat-button>Check Me! </button> <br/> <br/>
+
+  Raised Button: <button mat-raised-button>Click Me! </button> <br/> <br/>
+
+  <hr/>
+
+</div>
+
+```
+
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-angular-material/2.2-initial-material-sample-components-test.png" alt="Angular Material installation - initial module/component import - component testing" title="Angular Material installation - initial module/component import - component testing" width="1000" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 2.2 - Angular Material installation - initial module/component import - component testing </figcaption>
+  </figure>
+</p>
+
 2.3. Creating a separate material module
 ---------------------
 2.3. Isolate extract material module
@@ -451,7 +582,8 @@ Let's do it practically:
     ```
 - `angMaterials.module.ts` file will consist of only the import and exports related to Angular Material modules. So please remove all import and exports statements related to Angular Material modules from `app.module.ts` and add it into newly created `angMaterials.module.ts`:
     ```ts
-    import { MatButtonModule } from `@angular/material`
+    /* import { MatButtonModule } from `@angular/material` */
+    import { MatButtonModule } from '@angular/material/button'
 
     const AngMaterialsCompModule = [
         MatButtonModule
