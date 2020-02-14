@@ -707,3 +707,175 @@ export class AngMaterialsModule { }
 - Angular material `mat-display-1` to `mat-display-4` classes helps to set Typography heading levels (total 4 display levels - mainly used only once on a page for large headings)
 - By default, Angular Material doesn't apply any global CSS, the heading tags like `<h1>` to `<h6>` does not get any material styling. To get proper material styles heading tags we must be wrapped inside `.mat-typography` class. `.mat-typography` the class helps to use various HTML tags normally as this class styles all descendant/child native elements
 
+<hr/>
+
+1. Create a new angular component with angular/cli command:
+    ```
+    ng generate component typography
+
+    or
+
+    ng g c typography
+    ```
+2. Write required markup inside `typography.component.html` and include this component in `app.component.html` as tag/element selector `<typography-component></typography-component>`
+
+<hr/>
+
+> **Syntax & Example**: `typography.component.html`
+
+```html
+<section>
+
+  <section>
+    <span><u>.mat-display-4 to .mat-display-1</u></span> <br/> <br/> 
+    <header class="mat-display-4">Header 'mat-display-4'</header>
+    <header class="mat-display-3">Header 'mat-display-3'</header>
+    <header class="mat-display-2">Header 'mat-display-2'</header>
+    <header class="mat-display-1">Header 'mat-display-1'</header>
+  </section>
+
+  <hr style="border:1px dashed;" />
+
+  <section>
+    <span><u>.mat-display-1 to .mat-display-4 </u></span> <br/> <br/>
+    <header class="mat-display-1">Header 'mat-display-1'</header>
+    <header class="mat-display-2">Header 'mat-display-2'</header>
+    <header class="mat-display-3">Header 'mat-display-3'</header>
+    <header class="mat-display-4">Header 'mat-display-4'</header>
+  </section>
+
+  <hr style="border:1px dashed;" />
+
+  <section>
+    <span><u>.mat-h1 to .mat-h4</u></span> <br/> <br/>
+    <header class="mat-h1">Header 'mat-h1'</header>
+    <header class="mat-h2">Header 'mat-h2'</header>
+    <header class="mat-h3">Header 'mat-h3'</header>
+    <header class="mat-h4">Header 'mat-h4'</header>
+  </section>
+
+  <hr style="border:1px dashed;" />
+
+  <section class="mat-typography">
+    <span><u>.mat-typography -> h1 to h4</u></span> <br/> <br/>
+    <h1>'h1 inside mat-typography'</h1>
+    <h2>'h2 inside mat-typography'</h2>
+    <h3>'h3 inside mat-typography'</h3>
+    <h4>'h4 inside mat-typography'</h4>
+  </section>
+
+  <hr style="border:1px dashed;" />
+
+  <section>
+    <span><u>.mat-headline, .mat-title, .mat-subheading-2</u></span> <br/> <br/>
+    <header class="mat-headline">Header 'mat-h1' or 'mat-headline'</header>
+    <header class="mat-title">Header 'mat-h2' or 'mat-title'</header>
+    <header class="mat-subheading-2">Header 'mat-h3' or 'mat-subheading-2'</header>
+    <header class="mat-subheading-1">Header 'mat-h4' or 'mat-subheading-1'</header>
+  </section>
+
+  <hr style="border:1px dashed;" />
+
+  <section>
+    <span><u>.mat-headline, .mat-title, .mat-subheading-2</u></span> <br/> <br/>
+    <header class="mat-body-1">'mat-body-1'</header>
+    <header class="mat-body-2">'mat-body-2'</header>
+    <header class="mat-body-strong">'mat-body-strong'</header>
+    <header class="mat-capton">'mat-small', 'mat-capton'</header>
+  </section>
+
+</section>
+```
+
+<hr/>
+
+> **Syntax & Example**: `typography.component.html`
+
+```html
+<section>
+  <span><u>.mat-display-4 to .mat-display-1</u></span> <br/> <br/> 
+  <header class="mat-display-4">Header 'mat-display-4'</header>
+  <header class="mat-display-3">Header 'mat-display-3'</header>
+  <header class="mat-display-2">Header 'mat-display-2'</header>
+  <header class="mat-display-1">Header 'mat-display-1'</header>
+</section>
+```
+
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-angular-material/2.4.1-material-typograhy-mat-display.png" alt="Angular Material - mat-display classes" title="Angular Material - mat-display classes" width="1000" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 2.4.1 - Angular Material - mat-display classes </figcaption>
+  </figure>
+</p>
+
+<hr/>
+
+> **Syntax & Example**: `typography.component.html`
+
+```html
+<section>
+  <span><u>.mat-display-1 to .mat-display-4 </u></span> <br/> <br/>
+  <header class="mat-display-1">Header 'mat-display-1'</header>
+  <header class="mat-display-2">Header 'mat-display-2'</header>
+  <header class="mat-display-3">Header 'mat-display-3'</header>
+  <header class="mat-display-4">Header 'mat-display-4'</header>
+</section>
+```
+
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-angular-material/2.4.2-material-typograhy-mat-display.png" alt="Angular Material - mat-display classes" title="Angular Material - mat-display classes" width="1000" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 2.4.2 - Angular Material - mat-display classes </figcaption>
+  </figure>
+</p>
+
+<hr/>
+
+> **Syntax & Example**: `typography.component.html`
+
+```html
+<section>
+  <span><u>.mat-h1 to .mat-h4</u></span> <br/> <br/>
+  <header class="mat-h1">Header 'mat-h1'</header>
+  <header class="mat-h2">Header 'mat-h2'</header>
+  <header class="mat-h3">Header 'mat-h3'</header>
+  <header class="mat-h4">Header 'mat-h4'</header>
+</section>
+
+<hr style="border:1px dashed;" />
+
+<section class="mat-typography">
+  <span><u>.mat-typography -> h1 to h4</u></span> <br/> <br/>
+  <h1>'h1 inside mat-typography'</h1>
+  <h2>'h2 inside mat-typography'</h2>
+  <h3>'h3 inside mat-typography'</h3>
+  <h4>'h4 inside mat-typography'</h4>
+</section>
+
+<hr style="border:1px dashed;" />
+
+<section>
+  <span><u>.mat-headline, .mat-title, .mat-subheading-2</u></span> <br/> <br/>
+  <header class="mat-headline">Header 'mat-h1' or 'mat-headline'</header>
+  <header class="mat-title">Header 'mat-h2' or 'mat-title'</header>
+  <header class="mat-subheading-2">Header 'mat-h3' or 'mat-subheading-2'</header>
+  <header class="mat-subheading-1">Header 'mat-h4' or 'mat-subheading-1'</header>
+</section>
+
+<hr style="border:1px dashed;" />
+
+<section>
+  <span><u>.mat-headline, .mat-title, .mat-subheading-2</u></span> <br/> <br/>
+  <header class="mat-body-1">'mat-body-1'</header>
+  <header class="mat-body-2">'mat-body-2'</header>
+  <header class="mat-body-strong">'mat-body-strong'</header>
+  <header class="mat-capton">'mat-small', 'mat-capton'</header>
+</section>
+```
+
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-angular-material/2.4.3-material-typograhy-mat-display-classes.png" alt="Angular Material - mat-h1, mat-typography, mat-headline" title="Angular Material - mat-h1, mat-typography, mat-headline" width="1000" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 2.4.3 - Angular Material - mat-h1, mat-typography, mat-headline </figcaption>
+  </figure>
+</p>
