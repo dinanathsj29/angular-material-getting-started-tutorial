@@ -103,6 +103,7 @@ Topics included/covered
         - 2.1.2. [Installation-The short or quick way](#212-installation-the-short-or-quick-way)
     - 2.2. [Using Angular Material in project Application](#22-using-angular-material-in-project-application)
     - 2.3. [Creating a separate material module](#23-creating-a-separate-material-module) | [Isolate extract material module](#23-isolate-extract-material-module)
+    - 2.4. [Typography](#24-typography)
 
 1 Introduction to Angular Material
 =====================
@@ -693,3 +694,16 @@ export class AngMaterialsModule { }
     <figcaption>&nbsp;&nbsp;&nbsp; Image 2.3 - Isolated Angular Material - initial module/component import - component testing </figcaption>
   </figure>
 </p>
+
+2.4. Typography
+---------------------
+
+- Typography is nothing but managing/systematizing/representing the text in distinct/legible, readable, and appealing way when displayed/used on a page
+- Angular Material's typography is based on the guidelines from the `Google Material Design spec` and is designed/arranged and systematized into different typography levels
+- Typography basically deals with the `styles and appearance` of text on a page
+- Angular Material consists of `set of classes concern with style, size look and appearance of font/text`
+- Angular material provides Typography levels which keeps the font/text size standardised/definite with `font-face/family`, `font-size`, `font-weight` and `line-height`
+- Material Typography classes (`.mat-typography`) mostly starts/prefixed with `mat` keyword. example: `.mat-display-1`, `mat-h1`, `.mat-headline`, `.mat-title`
+- Angular material `mat-display-1` to `mat-display-4` classes helps to set Typography heading levels (total 4 display levels - mainly used only once on a page for large headings)
+- By default, Angular Material doesn't apply any global CSS, the heading tags like `<h1>` to `<h6>` does not get any material styling. To get proper material styles heading tags we must be wrapped inside `.mat-typography` class. `.mat-typography` the class helps to use various HTML tags normally as this class styles all descendant/child native elements
+
