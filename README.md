@@ -104,6 +104,7 @@ Topics included/covered
     - 2.2. [Using Angular Material in project Application](#22-using-angular-material-in-project-application)
     - 2.3. [Creating a separate material module](#23-creating-a-separate-material-module) | [Isolate extract material module](#23-isolate-extract-material-module)
     - 2.4. [Typography](#24-typography)
+    - 2.5. [Button](#25-button)
 
 1 Introduction to Angular Material
 =====================
@@ -904,3 +905,86 @@ export class AngMaterialsModule { }
   </figure>
 </p>
 
+2.5. Button
+---------------------
+
+- Angular Material buttons are native `<button>` and/or `<a>` tags/elements enhanced with Material Design styling and ink ripples
+- `'mat-button'` attribute is used with `<button>` and/or `<a>` tags/elements to get look and feel of Angular Material button
+
+> **Syntax & Example**: `app.component.html`
+
+```html
+<buttons-component></buttons-component>
+```
+
+> **Syntax & Example**: `buttons.component.html`
+
+```html
+<section class="mat-typography">
+  
+  <h2>Basic Buttons</h2>
+  <button mat-button>Basic Button</button>
+  <button mat-button color="primary">Basic Button - Color Primary</button>
+  <button mat-button color="accent">Basic Button - Color Accent</button>
+  <button mat-button disabled>Basic Button - Disabled</button>
+  <a mat-button>a link button</a>
+
+  <h2>Basic a href button</h2>
+  <a mat-button>a link button</a>
+  <a mat-button color="primary">Basic Link Button - Color Primary</a>
+  <a mat-button color="accent">Basic Link Button - Color Accent</a>
+  <a mat-button disabled>Basic Link Button - Disabled</a>
+
+  <h2>Raised Buttons</h2>
+  <button mat-raised-button>Basic Raised Button</button>
+  <button mat-raised-button color="primary">Raised Button - Color Primary</button>
+  <button mat-raised-button color="accent">Raised Button - Color Accent</button>
+  <button mat-raised-button disabled>Raised Button - Disabled</button>
+
+  <h2>Stroked Buttons</h2>
+  <button mat-stroked-button>Basic Stroked Button</button>
+  <button mat-stroked-button color="primary">Stroked Button - Color Primary</button>
+  <button mat-stroked-button color="accent">Stroked Button - Color Accent</button>
+  <button mat-stroked-button disabled>Stroked Button - Disabled</button>
+
+  <h2>Flat Buttons (Without Shadow)</h2>
+  <button mat-flat-button>Basic Flat Button</button>
+  <button mat-flat-button color="primary">Flat Button - Color Primary</button>
+  <button mat-flat-button color="accent">Flat Button - Color Accent</button>
+  <button mat-flat-button disabled>Flat Button - Disabled</button>
+
+  <h2>Fab Buttons (Circuler button)</h2>
+  <button mat-fab>Fab</button>
+  <button mat-fab color="primary">Primary</button>
+  <button mat-fab color="accent">Accent</button>
+  <button mat-fab disabled>Disabled</button>
+
+  <h2>Mini Fab Buttons (Small Circuler button)</h2>
+  <button mat-mini-fab>Fab</button>
+  <button mat-mini-fab color="primary">Primary</button>
+  <button mat-mini-fab color="accent">Accent</button>
+  <button mat-mini-fab disabled>Disabled</button>
+
+  <h2>Icon Buttons</h2>
+  <button mat-icon-button>Icon</button>
+  <button mat-icon-button color="primary">Primary</button>
+  <button mat-icon-button color="accent">Accent</button>
+  <button mat-icon-button disabled>Disabled</button>
+
+</section>
+```
+
+> **Syntax & Example**: `styles.css`
+
+```css
+section.mat-typography button {
+  margin-right: 2em;
+}
+```
+
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-angular-material/2.5.1-material-buttons.png" alt="Angular Material Buttons" title="Angular Material Buttons" width="1000" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 2.5.1 - Angular Material Buttons </figcaption>
+  </figure>
+</p>
