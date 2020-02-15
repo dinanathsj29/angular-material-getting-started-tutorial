@@ -105,6 +105,7 @@ Topics included/covered
     - 2.3. [Creating a separate material module](#23-creating-a-separate-material-module) | [Isolate extract material module](#23-isolate-extract-material-module)
     - 2.4. [Typography](#24-typography)
     - 2.5. [Button](#25-button)
+        - 2.5.1. [Disable Ripple Animation Effect](#251-disable-ripple-animation-effect)
 
 1 Introduction to Angular Material
 =====================
@@ -988,3 +989,15 @@ section.mat-typography button {
     <figcaption>&nbsp;&nbsp;&nbsp; Image 2.5.1 - Angular Material Buttons </figcaption>
   </figure>
 </p>
+
+### **2.5.1. Disable Ripple Animation Effect**
+
+- `disableRipple` attribute is used to Disable Ripple Animation Effect of Angular Material Button
+
+> **Syntax & Example**: `buttons.component.html`
+
+```html
+<button mat-button disableRipple>Basic Button - Disabled</button>
+
+<button mat-icon-button disableRipple>Disable Ripple</button>
+```
