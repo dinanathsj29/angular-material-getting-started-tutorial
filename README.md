@@ -879,3 +879,28 @@ export class AngMaterialsModule { }
     <figcaption>&nbsp;&nbsp;&nbsp; Image 2.4.3 - Angular Material - mat-h1, mat-typography, mat-headline </figcaption>
   </figure>
 </p>
+
+<hr/>
+
+> **`Note`**: 
+  - Applying typography related classes to an individual elements is pretty time consuming and tedious, so the best practice/the better and also advisable way is that to apply `mat-typography` class to main parent container/element or at global level (The `.mat-typography` class helps to use various HTML tags normally as this class styles all descendant/child native elements)
+
+> **Syntax & Example**: `typography.component.html`
+
+```html
+<section class="mat-typography">
+  <h1>h1 inside mat-typography</h1>
+  <h2>h2 inside mat-typography</h2>
+  <h3>h3 inside mat-typography</h3>
+  <h4>h4 inside mat-typography</h4>
+  <p>p paragraph inside mat-typography</p>
+  <caption>caption inside mat-typography</caption>
+</section>
+```
+<p>
+  <figure>
+    &nbsp;&nbsp;&nbsp; <img src="_images-angular-material/2.4.4-material-typography-mat-typography-global-level.png" alt="Angular Material - Apply .mat-typography class at global/parent level" title="Angular Material - Apply .mat-typography class at global/parent level" width="1000" border="2" />
+    <figcaption>&nbsp;&nbsp;&nbsp; Image 2.4.4 - Angular Material - Apply .mat-typography class at global/parent level </figcaption>
+  </figure>
+</p>
+
